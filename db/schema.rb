@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2021_06_04_223429) do
     t.string "authors"
     t.string "published_date"
     t.string "image_link"
+    t.string "info_link"
     t.integer "isbn"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
