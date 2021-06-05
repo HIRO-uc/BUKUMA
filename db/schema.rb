@@ -36,10 +36,13 @@ ActiveRecord::Schema.define(version: 2021_06_05_002954) do
   create_table "books", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title"
     t.string "authors"
+    t.string "publisher"
     t.string "published_date"
+    t.text "description"
     t.string "image_link"
     t.string "info_link"
-    t.integer "isbn"
+    t.string "isbn"
+    t.integer "status_id"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
