@@ -11,6 +11,6 @@ class BooksController < ApplicationController
 
   private
   def book_params
-    params.permit(:title, :authors, :published_date, :image_link, :info_link, :isbn).merge(user_id: current_user.id)
+    params.permit(:title, :authors, :published_date, :image_link, :info_link, :isbn, :status_id).merge(user_id: current_user.id)
   end
 end
