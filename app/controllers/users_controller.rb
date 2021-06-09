@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_action :authenticate_user!
 
   def show
-    @books = current_user.books
+    @user = User.find(params[:id])
+    @books = @user.books
   end
 end
