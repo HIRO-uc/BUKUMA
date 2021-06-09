@@ -17,7 +17,25 @@
 
  @import 'bootstrap';
 
- .thumbnail {
+ .thumbnail-lg {
   width: 150px;
   height: 200px;
+  background-color: lightgray;
+}
+
+.thumbnail-sm {
+  width: 120px;
+  height: 160px;
+  background-color: lightgray;
+  text-decoration: none;
+}
+
+.icon-lg {
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+}
+
+.hidden {
+  display: none;
 }
